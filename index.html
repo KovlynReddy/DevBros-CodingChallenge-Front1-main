@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <link href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
+    <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+<title>Assessment</title>
+</head>
+<body>
+<h1>Kovlyn Reddy Assessment </h1>
+            
+<h4>See bottom of page for developer notes </h4>
+        <br/>
+        <a href="#" class=""><img src="checkout.png"> </a>
+        <br/>
+        <br/>
+            &emsp;&emsp; <label >Target Coloumn</label>&emsp;<input type="number" placeholder="0" id="RowNumber"> <button type="button" class="button" id="SortButton">Sort</button>
+            &emsp;&emsp;<label >Search Phrase</label>&emsp;<input type="text" placeholder="Search" id="SearchPhrase"><button type="button" class="button" id="SearchButton">Search</button>
+    <table id="Table_ID" class="display compact cell-border order-column" style="width: 100%;">
+    <thead id="tHead">
+      <tr>
+          <th>Table_Head_1</th>
+          <th>Table_Head_2</th>
+          <th>Table_Head_3</th>
+      </tr>
+    </thead>
+    <tbody id="tBody">
+      <tr>
+          <td>Table_Data_1</td>
+            <td>Table_Data_2</td>
+            <td>Table_Data_3</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h3>How to use</h3>
+  <h4>To Sort :</h4>  Select Col Then Click Sort Button to Sort<br/>
+  <h4>To Search :</h4> Select Col Then Enter Phrase Then Click Search to Search by that col and phrase 
+  <br/>
+  <h3>How I Tackled this</h3>
+  <p>
+    <ol>
+    <li>Requires running from a server to avoid <strong>CORS</strong> policy error on fethcing data </li>
+    <li>Suggested using VS Code and downloading Live Server to run </li>
+    <li> Pulls data without knowing its 2D shape , traverses JSON first Set of Children and constructs table off the Keys of the First Children</li>
+    <li>Base search and sort algorithms taken from W3 School and changed to take in an index for the coloumns</li>
+    <li>Attempted to use clicking of table header to trigger the sorting , tried a couple different solutions such as vanilla eventhandler and jquery event handler</li>
+    <li>However I am coding 2 other assessments this weekend and decided to go with this crude solution of a column input</li>
+    <li>I would preffered to use Datatables but it was strongly advised against</li>
+    <li>I chose to use vanilla html css and js instead of my main C# .net stack</li>
+    <li>I am a Full Stack Developer but my comfort is defnitly in the back end</li>
+  </ol>
+  </p>
+  <br/>
+  <br/>
+</body>
+</html>
+<script type="module" src="script.js"></script>
+<script>
+
+</script>
+
